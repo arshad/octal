@@ -9,8 +9,6 @@
   </head>
   <body class="<?php print $classes; ?>">
 
-  <?php print $page_top; ?>
-
   <header id="header" class="header" role="header">
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
@@ -54,8 +52,6 @@
       <?php endif; ?>
     </div>
   </footer>
-
-  <?php print $page_bottom; ?>
 
   </body>
 </html>
