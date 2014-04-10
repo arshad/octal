@@ -5,4 +5,9 @@ body {
   #header {
     margin-top: 0;
   }
+  .sidebar {
+    @media (max-width: $screen-md-min) {
+      display: none;
+    }
+  }
 }

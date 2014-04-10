@@ -649,7 +649,7 @@ cite {
 }
 
 /* line 91, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-.text-muted {
+.text-muted, .steps-list .step.done {
   color: #999999;
 }
 
@@ -10778,4 +10778,36 @@ html.js fieldset.collapsed {
 /* line 5, ../sass/partials/_layout.scss */
 body #header {
   margin-top: 0;
+}
+@media (max-width: 992px) {
+  /* line 8, ../sass/partials/_layout.scss */
+  body .sidebar {
+    display: none;
+  }
+}
+
+/* line 7, ../sass/partials/_structure.scss */
+.steps-list {
+  margin-top: 25px;
+}
+/* line 9, ../sass/partials/_structure.scss */
+.steps-list .step {
+  margin-bottom: 25px;
+}
+/* line 11, ../sass/partials/_structure.scss */
+.steps-list .step h6 {
+  margin-bottom: 2px;
+}
+/* line 14, ../sass/partials/_structure.scss */
+.steps-list .step h4 {
+  margin-top: 0;
+}
+/* line 17, ../sass/partials/_structure.scss */
+.steps-list .step.active {
+  color: #5cb85c;
+}
+/* line 20, ../sass/partials/_structure.scss */
+.steps-list .step.done {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }

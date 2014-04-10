@@ -14,14 +14,7 @@
   <header id="header" class="header" role="header">
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a href="<?php print $front_page; ?>" id="logo" class="navbar-brand">
             <?php print $site_name; ?>
           </a>
@@ -31,7 +24,7 @@
           <?php if (isset($steps)): ?>
             <p class="steps navbar-text"><?php print $steps; ?></p>
           <?php endif; ?>
-        </div>
+        </div> <!-- /.navbar-right -->
       </div> <!-- /.container -->
     </nav>
   </header>
