@@ -27,9 +27,11 @@
           </a>
         </div> <!-- /.navbar-header -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-        </div><!-- /.navbar-collapse -->
+        <div class="navbar-right">
+          <?php if (isset($steps)): ?>
+            <p class="steps navbar-text"><?php print $steps; ?></p>
+          <?php endif; ?>
+        </div>
       </div> <!-- /.container -->
     </nav>
   </header>
@@ -52,9 +54,8 @@
   <footer id="footer" class="footer" role="footer">
     <div class="container">
       <?php if ($copyright): ?>
-        <small class="copyright pull-left"><?php print $copyright; ?></small>
+        <p class="copyright text-center text-muted"><small><?php print $copyright; ?></small></p>
       <?php endif; ?>
-      <small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small>
     </div>
   </footer>
 

@@ -35,3 +35,47 @@ function octal_preprocess_page(&$variables) {
     $variables['copyright'] = check_markup($copyright['value'], $copyright['format']);
   }
 }
+
+/**
+ * Implements template_preprocess_maintenance_page().
+ */
+function octal_preprocess_maintenance_page(&$variables) {
+  global $install_state;
+
+  if ($install_state) {
+    // Find the number of tasks to run.
+    $tasks = install_tasks_to_display($install_state);
+    $total = sizeof($tasks);
+    
+    // Find the position of the active task.
+    $keys = array_keys($tasks);
+    $active_task = $install_state['active_task'];
+    $current = array_search($active_task, $keys) + 1;
+    
+    // Show steps.
+    $variables['steps'] = t('Step @current of @total', array(
+      '@current' => $current,
+      '@total' => $total,
+    ));
+  }
+
+  $profile = isset($_GET['profile']) ? $_GET['profile'] : '';
+  if ($profile) {
+    $path = drupal_get_path('profile', $profile);
+    $info_file = $path . '/' . $profile . '.info';
+    $info = drupal_parse_info_file($info_file);
+
+    $variables['site_name'] = $info['name'];
+    $version['version'] = $info['version'];
+
+    // Use copyright from distro info file.
+    if (isset($info['copyright'])) {
+      $variables['copyright'] = $info['copyright'];
+    } else {
+      $variables['copyright'] = st('@name @version', array(
+        '@name' => $info['name'],
+        '@version' => $info['version'],
+      ));
+    }
+  }
+}
