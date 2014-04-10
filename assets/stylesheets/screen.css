@@ -2956,38 +2956,38 @@ select[multiple].input-lg,
 }
 
 /* line 60, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-primary {
+.btn-primary, .form-actions .btn:first-child {
   color: white;
   background-color: #428bca;
   border-color: #357ebd;
 }
 /* line 505, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+.btn-primary:hover, .form-actions .btn:hover:first-child, .btn-primary:focus, .form-actions .btn:focus:first-child, .btn-primary:active, .form-actions .btn:active:first-child, .btn-primary.active, .form-actions .active.btn:first-child {
   color: white;
   background-color: #3276b1;
   border-color: #285e8e;
 }
 /* line 513, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.open .btn-primary.dropdown-toggle {
+.open .btn-primary.dropdown-toggle, .open .form-actions .dropdown-toggle.btn:first-child, .form-actions .open .dropdown-toggle.btn:first-child {
   color: white;
   background-color: #3276b1;
   border-color: #285e8e;
 }
 /* line 518, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn-primary:active, .btn-primary.active {
+.btn-primary:active, .form-actions .btn:active:first-child, .btn-primary.active, .form-actions .active.btn:first-child {
   background-image: none;
 }
 /* line 522, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.open .btn-primary.dropdown-toggle {
+.open .btn-primary.dropdown-toggle, .open .form-actions .dropdown-toggle.btn:first-child, .form-actions .open .dropdown-toggle.btn:first-child {
   background-image: none;
 }
 /* line 528, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+.btn-primary.disabled, .form-actions .disabled.btn:first-child, .btn-primary.disabled:hover, .form-actions .disabled.btn:hover:first-child, .btn-primary.disabled:focus, .form-actions .disabled.btn:focus:first-child, .btn-primary.disabled:active, .form-actions .disabled.btn:active:first-child, .btn-primary.disabled.active, .form-actions .disabled.active.btn:first-child, .btn-primary[disabled], .form-actions [disabled].btn:first-child, .btn-primary[disabled]:hover, .form-actions [disabled].btn:hover:first-child, .btn-primary[disabled]:focus, .form-actions [disabled].btn:focus:first-child, .btn-primary[disabled]:active, .form-actions [disabled].btn:active:first-child, .btn-primary[disabled].active, .form-actions [disabled].active.btn:first-child, fieldset[disabled] .btn-primary, fieldset[disabled] .form-actions .btn:first-child, .form-actions fieldset[disabled] .btn:first-child, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .form-actions .btn:hover:first-child, .form-actions fieldset[disabled] .btn:hover:first-child, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .form-actions .btn:focus:first-child, .form-actions fieldset[disabled] .btn:focus:first-child, fieldset[disabled] .btn-primary:active, fieldset[disabled] .form-actions .btn:active:first-child, .form-actions fieldset[disabled] .btn:active:first-child, fieldset[disabled] .btn-primary.active, fieldset[disabled] .form-actions .active.btn:first-child, .form-actions fieldset[disabled] .active.btn:first-child {
   background-color: #428bca;
   border-color: #357ebd;
 }
 /* line 538, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn-primary .badge {
+.btn-primary .badge, .form-actions .btn:first-child .badge {
   color: #428bca;
   background-color: white;
 }
@@ -3170,7 +3170,7 @@ select[multiple].input-lg,
 }
 
 /* line 124, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .form-actions .btn {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
@@ -4546,7 +4546,7 @@ input[type="button"].btn-block {
 }
 
 /* line 112, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .form-actions .btn-group > .btn + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4568,13 +4568,13 @@ input[type="button"].btn-block {
 }
 
 /* line 134, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-lg .caret, .btn-group-lg > .btn .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .form-actions .btn .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
 /* line 139, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .form-actions .btn .caret, .form-actions .dropup .btn .caret {
   border-width: 0 5px 5px;
 }
 
@@ -10001,63 +10001,22 @@ ul.links.inline li {
   color: white;
 }
 
-/* line 175, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
-.progress {
-  margin-bottom: 60px;
-  overflow: visible;
-  height: 40px;
-  font-weight: 400;
-}
-/* line 180, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
-.progress .bar {
-  width: 100%;
-  margin: 0 0 5px;
-  float: none;
-  border: none;
-  background: none;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 187, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
-.progress .bar .filled {
-  height: 40px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  background-image: -webkit-linear-gradient(45deg, #428bca 25%, transparent 25%, transparent 50%, #428bca 50%, #428bca 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, #428bca 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #428bca 50%, #428bca 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-  -moz-background-size: 40px 40px;
-  -o-background-size: 40px 40px;
-  -webkit-background-size: 40px 40px;
-  background-size: 40px 40px;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: width 0.6s ease;
-  transition: width 0.6s ease;
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
-  animation: progress-bar-stripes 2s linear infinite;
-}
-
-/* line 203, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 176, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 .item-list ul.pagination {
   margin: 20px 0;
 }
-/* line 205, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 178, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 .item-list ul.pagination > li {
   margin: 0;
   display: inline-block;
 }
 
-/* line 215, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 188, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 .ctools-dropdown-container hr {
   margin: 0;
 }
 
-/* line 220, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 193, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 ul.nav,
 ul.navl li,
 ul.dropdown-menu,
@@ -10065,7 +10024,7 @@ ul.dropdown-menu li {
   list-style: none outside none !important;
 }
 
-/* line 229, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 202, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 .drupal-navbar .navbar-bar,
 .drupal-navbar .navbar-tray-vertical > .navbar-lining:before,
 .drupal-navbar .navbar-tray-horizontal {
@@ -10073,7 +10032,7 @@ ul.dropdown-menu li {
   box-shadow: none;
 }
 
-/* line 234, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 207, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 .drupal-navbar .navbar-tray-vertical,
 .drupal-navbar .navbar-tray-vertical > .navbar-lining:before {
   bottom: 0;
@@ -10081,48 +10040,48 @@ ul.dropdown-menu li {
 }
 
 @media only screen and (min-width: 38.125em) {
-  /* line 240, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+  /* line 213, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
   body.navbar-tray-open.navbar-vertical {
     margin-left: 240px !important;
   }
 }
-/* line 248, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 221, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 a#navbar-link-admin-panopoly:before {
   background-image: url("../images/icon/icon-panopoly.png");
 }
-/* line 251, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 224, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 a#navbar-link-admin-panopoly.active:before {
   background-image: url("../images/icon/icon-panopoly-active.png");
 }
 
-/* line 256, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 229, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 a#navbar-link-admin-apps:before {
   background-image: url("../images/icon/icon-apps.png");
 }
-/* line 259, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 232, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 a#navbar-link-admin-apps.active:before {
   background-image: url("../images/icon/icon-apps-active.png");
 }
 
-/* line 266, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 239, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 body.ctools-modal-open {
   overflow: hidden;
 }
 
-/* line 270, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 243, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .modal-content {
   width: 100%;
   overflow: hidden;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-/* line 275, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 248, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent #modal-content {
   overflow: auto;
   width: 100% !important;
   background: white;
 }
-/* line 280, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 253, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-add-content-modal {
   background: none;
   padding: 0;
@@ -10132,12 +10091,12 @@ body.ctools-modal-open {
   position: absolute;
 }
 
-/* line 290, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 263, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-section-columns,
 #modalContent .panels-categories-description {
   border: none;
 }
-/* line 294, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 267, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-section-column-categories {
   margin-left: 0;
   border-right: 1px solid #ccc;
@@ -10146,68 +10105,68 @@ body.ctools-modal-open {
   overflow: auto;
   padding-bottom: 20px;
 }
-/* line 301, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 274, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-section-column-categories .btn {
   border: 1px solid #999999 !important;
   line-height: inherit;
   margin: 0;
   text-align: left;
 }
-/* line 308, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 281, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-categories-box {
   border: 0;
 }
-/* line 310, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 283, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-categories-box a.btn {
   padding: 5px 10px;
 }
-/* line 313, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 286, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-categories-box a.active {
   background: #eeeeee;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 319, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 292, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-root-content-box a.btn {
   padding: 5px 10px;
 }
-/* line 323, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 296, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-categories-description {
   padding: 20px;
 }
-/* line 326, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 299, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modalContent .panels-section-columns {
   padding-bottom: 20px;
 }
 
-/* line 330, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 303, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content fieldset.widget-preview {
   margin-top: 18px;
   margin-bottom: 0;
   position: static;
   border: 1px solid #ddd;
 }
-/* line 335, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 308, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content fieldset.widget-preview .panel-heading {
   position: relative;
 }
-/* line 337, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 310, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content fieldset.widget-preview .panel-heading .btn {
   position: absolute;
   right: 10px;
   top: 5px;
 }
 
-/* line 345, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 318, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content .ctools-auto-submit-full-form fieldset {
   width: 48%;
   display: block !important;
 }
-/* line 348, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 321, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content .ctools-auto-submit-full-form fieldset fieldset {
   width: 100%;
 }
-/* line 351, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 324, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content .ctools-auto-submit-full-form fieldset.widget-preview-single {
   float: right;
   margin-left: 1em;
@@ -10215,7 +10174,7 @@ body.ctools-modal-open {
   width: 48%;
   max-width: 48% !important;
 }
-/* line 359, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 332, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content .ctools-auto-submit-full-form .form-actions {
   float: right;
   clear: right;
@@ -10224,31 +10183,31 @@ body.ctools-modal-open {
   text-align: right;
 }
 
-/* line 370, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 343, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content .form-item-view-settings {
   display: block;
 }
-/* line 373, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 346, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content .form-item-exposed-use-pager {
   display: block;
 }
-/* line 376, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 349, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content #panopoly-form-widget-preview {
   width: 50%;
   float: right;
 }
-/* line 379, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 352, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 #modal-content #panopoly-form-widget-preview .container {
   width: auto;
 }
 
-/* line 391, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 364, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 .calendar-calendar table.mini td {
   border: 1px solid #eeeeee !important;
   padding: 5px;
 }
 
-/* line 399, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+/* line 372, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
 .view-header .date-nav-wrapper h3 {
   margin-top: 5px !important;
   margin-bottom: 0;
