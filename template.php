@@ -57,6 +57,8 @@ function octal_preprocess_maintenance_page(&$variables) {
       '@current' => $current,
       '@total' => $total,
     ));
+
+    $variables['title'] = $tasks[$active_task];
   }
 
   $profile = isset($_GET['profile']) ? $_GET['profile'] : '';

@@ -38,6 +38,9 @@
           </div>
         <?php endif ?>
         <div class="col-md-9">
+          <?php if ($title): ?>
+            <h1 class="page-header"><?php print $title; ?></h1>
+          <?php endif; ?>
           <?php print $content; ?>
         </div>
       </div>
