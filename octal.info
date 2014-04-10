@@ -8,6 +8,8 @@ base theme  = radix
 
 ; Regions
 regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions_hidden[] = sidebar_first
 
 ; Panels
 plugins[panels][layouts] = panels/layouts
