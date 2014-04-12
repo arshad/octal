@@ -79,5 +79,10 @@ function octal_preprocess_maintenance_page(&$variables) {
         '@version' => $info['version'],
       ));
     }
+
+    // Quick fix to add the required radix-progress.js.
+    // We assume that Radix is at profiles/*/themes/radix.
+    // TODO: handle this better.
+    drupal_add_js($path . '/themes/radix/assets/javascripts/radix-progress.js');
   }
 }
